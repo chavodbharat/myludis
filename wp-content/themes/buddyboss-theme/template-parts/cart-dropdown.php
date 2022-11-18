@@ -1,4 +1,4 @@
-<div class="notification-wrap header-cart-link-wrap cart-wrap menu-item-has-children">
+<div class="notification-wrap header-cart-link-wrap cart-wrap menu-item-has-children test">
 	<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="header-cart-link notification-link">
         <span data-balloon-pos="down" data-balloon="<?php _e( 'Cart', 'buddyboss-theme' ); ?>">
 			<i class="bb-icon-l bb-icon-shopping-cart"></i>

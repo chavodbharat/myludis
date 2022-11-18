@@ -67,6 +67,8 @@ define( 'NONCE_SALT',       '6VQi]UV9:%^6irfN++^51cFAbL!Jx9WH>@9R<kB$P;y0JR<wke1
  */
 $table_prefix = 'myl_';
 
+// $table_prefix = 'wp_';
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -79,7 +81,9 @@ $table_prefix = 'myl_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
+
+define( 'WP_DEBUG',false);
+define('ALLOW_UNFILTERED_UPLOADS', true);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
