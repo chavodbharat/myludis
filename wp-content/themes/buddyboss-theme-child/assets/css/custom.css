@@ -162,6 +162,42 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     margin-bottom: 0;
 }
 
+.mobileFooter .moreWrap .moreDrop{
+    width: 200px;
+    position: absolute;
+    bottom: 100%;
+    right: -10px;
+    background: #000;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: none; 
+}
+.mobileFooter .moreWrap .moreDrop.show{
+    display: block;
+}
+.mobileFooter .moreWrap .moreDrop ul{
+    list-style: none;
+    margin: 0;
+}
+.mobileFooter .moreWrap .moreDrop ul li:not(:last-child) {
+    border-bottom: 1px solid #34383b;
+}
+.mobileFooter .moreWrap .moreDrop ul li a{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 40px;
+    position: relative;
+    color: rgb(171, 163, 150);
+}
+.mobileFooter .moreWrap .moreDrop ul li a i{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    font-size: 115%;
+}
 @media only screen and (max-width: 767px){
     .mobileFooter{ 
         display: block;

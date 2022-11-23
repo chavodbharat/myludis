@@ -32,11 +32,18 @@ $userID = get_current_user_id();
                   <h5><?php _e('Friends','myludis'); ?></h5>
               </a>
           </div>
-          <div class="item">
-              <a href="<?php echo bp_core_get_user_domain($userID); ?>activity" >
+          <div class="item moreWrap">
+              <a href="#!" class="moreBtn">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-more-o.svg" alt="More" />
                  <h5><?php _e('More','myludis'); ?></h5>
               </a>
+              <div class="moreDrop">
+                <ul>
+                    <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
+                    <li><a href="#!">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
+                    <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li>
+                </ul>
+              </div>
           </div>
       </div>
   </div>

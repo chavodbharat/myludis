@@ -16,4 +16,7 @@ jQuery(document).ready(function($){
         jQuery('.mobile_icon_menu' + activeTabMenu).addClass('menu-show');
 
     });
+    jQuery('.mobileFooter > .innerWrap > .item.moreWrap .moreBtn').on('click', function(){
+        jQuery(this).next('.moreDrop').toggleClass('show');
+    });
 }); 

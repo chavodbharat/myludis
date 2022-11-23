@@ -30,11 +30,18 @@
                  
               </a>
           </div>
-          <div class="item">
-              <a href="#!" >
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/lab/more-o.svg" alt="Buy" />
-                      <h5><?php _e('More','myludis'); ?></h5>
+         <div class="item moreWrap">
+              <a href="#!" class="moreBtn">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/lab/more-o.svg" alt="" />
+                  <h5><?php _e('More','myludis'); ?></h5>
               </a>
+              <div class="moreDrop">
+                <ul>
+                    <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
+                    <li><a href="#!">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
+                    <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li>
+                </ul>
+              </div>
           </div>
       </div>
   </div>
