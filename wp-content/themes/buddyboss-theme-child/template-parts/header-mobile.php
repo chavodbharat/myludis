@@ -36,7 +36,7 @@ $logo_class         = ( $logo_align <= 1 && ( ! buddyboss_is_learndash_inner() &
 					if ( buddyboss_is_learndash_inner() && buddyboss_theme_ld_focus_mode() ) {
 						if ( buddyboss_is_learndash_brand_logo() ) {
 							?>
-							<img src="<?php echo esc_url( wp_get_attachment_url( buddyboss_is_learndash_brand_logo() ) ); ?>" alt="<?php echo esc_attr( get_post_meta( buddyboss_is_learndash_brand_logo(), '_wp_attachment_image_alt', true ) ); ?>" class="bb-mobile-logo">
+								<img src="<?php echo esc_url( wp_get_attachment_url( buddyboss_is_learndash_brand_logo() ) ); ?>" alt="<?php echo esc_attr( get_post_meta( buddyboss_is_learndash_brand_logo(), '_wp_attachment_image_alt', true ) ); ?>" class="bb-mobile-logo">
 							<?php
 						} else {
 							echo $logo;
@@ -102,6 +102,10 @@ $logo_class         = ( $logo_align <= 1 && ( ! buddyboss_is_learndash_inner() &
 
 				if ( $show_shopping_cart && class_exists( 'WooCommerce' ) ) :
 					get_template_part( 'template-parts/cart-dropdown' );
+				endif;
+
+				if ( $show_shopping_cart && class_exists( 'WooCommerce' ) ) :
+					get_template_part( 'template-parts/header-avatar-mobile');
 				endif;
 			}
 			?>

@@ -93,11 +93,11 @@ $logo_class         = ( $logo_align <= 1 && ( ! buddyboss_is_learndash_inner() &
 				endif;
 
 				if ( $show_messages && function_exists( 'bp_is_active' ) && bp_is_active( 'messages' ) ) :
-					get_template_part( 'template-parts/messages-dropdown' );
+					get_template_part( 'template-parts/messages-dropdown');
 				endif;
 
 				if ( $show_notifications && function_exists( 'bp_is_active' ) && bp_is_active( 'notifications' ) ) :
-					get_template_part( 'template-parts/notification-dropdown' );
+					get_template_part( 'template-parts/notification-dropdown');
 				endif;
 
 				if ( $show_shopping_cart && class_exists( 'WooCommerce' ) ) :
@@ -125,7 +125,7 @@ $logo_class         = ( $logo_align <= 1 && ( ! buddyboss_is_learndash_inner() &
 				$display_name = function_exists( 'bp_core_get_user_displayname' ) ? bp_core_get_user_displayname( $current_user->ID ) : $current_user->display_name;
 				?>
 				<div class="user-wrap">
-					<a href="<?php echo esc_url( $user_link ); ?>"><?php echo get_avatar( $current_user->ID, 100 ); ?></a>
+						<a href="<?php echo esc_url( $user_link ); ?>"><?php echo get_avatar( $current_user->ID, 100 ); ?></a>
 					<div>
 						<a href="<?php echo esc_url( $user_link ); ?>">
 							<span class="user-name"><?php echo esc_html( $display_name ); ?></span>

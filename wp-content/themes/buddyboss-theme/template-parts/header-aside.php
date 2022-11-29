@@ -52,7 +52,7 @@ $profile_dropdown   = buddyboss_theme_get_option( 'profile_dropdown' );
 				endif;
 			endif;
 		endif;
-
+	
 		if ( 'off' !== $profile_dropdown ) {
 			if ( is_user_logged_in() ) :
 				?>

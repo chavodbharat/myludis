@@ -54,6 +54,7 @@ $profile_dropdown   = buddyboss_theme_get_option( 'profile_dropdown' );
 		endif;
 
 		if ( 'off' !== $profile_dropdown ) {
+			
 			if ( is_user_logged_in() ) :
 				?>
 				<div class="user-wrap user-wrap-container menu-item-has-children">

@@ -34,6 +34,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     bottom: 0px;
     align-items: center;
     border-top: 2px solid #34383b;
+    z-index: 9;
 }
 .home-page.directory .header.entry-header{
     display: none;
@@ -86,7 +87,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     padding-left: 30px; */
 }
 .admin-bar .tabContentWrap{
-    height: calc(100vh - 301px);
+    /* height: calc(100vh - 301px); */
 }
 .page-template-home-template-php #content, 
 .page-template-home-template-php #content > .container, 
@@ -198,6 +199,69 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     transform: translate(0px, -50%);
     font-size: 115%;
 }
+
+html:not(.wp-dark-mode-active) .appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+    filter: brightness(0%);
+}
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap{
+    background: #fff;
+    border: 1px solid #F4F4F4;
+}
+html:not(.wp-dark-mode-active) .mobileFooter .moreWrap .moreDrop{
+    background: #ffffff;
+}
+html:not(.wp-dark-mode-active) .mobileFooter .moreWrap .moreDrop ul li:not(:last-child){
+    border-color: #f0f0f0;
+}
+html:not(.wp-dark-mode-active) .limitAlert .innerWrap .img{
+    background: #E6EDF2;
+}
+html:not(.wp-dark-mode-active) .myStats .itemWrap .item .graphImg img{
+    visibility: hidden;
+}
+html:not(.wp-dark-mode-active) .myStats .itemWrap .item .graphImg{
+    background-image: url('/wp-content/uploads/2022/11/graph-light.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a:not(.logoTh) img{
+    filter: brightness(0%);
+}
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a.logoTh{
+    color: #fff;
+}
+html:not(.wp-dark-mode-active) .mobileFooter .moreWrap .moreDrop ul li a,
+.myStats .itemWrap .item .title h4,
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a h5{
+    color: #000;
+}
+
+.home-page .entry-header{
+    display: none;
+}
+.mobileFooter .innerWrap .item a.logoTh{
+    position: relative;
+    font-size: 25px;
+}
+.mobileFooter .innerWrap .item a.logoTh span.count{
+    position: absolute;
+    background: transparent;
+    box-shadow: none;
+    top: 0%;
+    right: 5%;
+    width: 24px;
+}
+.mobileFooter .innerWrap .item a.logoTh img{
+    flex: 0 0 35px;
+    max-width: 35px;
+    width: 35px;
+}
+.mobileFooter .innerWrap .item a.logoTh > i{
+    margin-left: 0 !important;
+}
+
+
 @media only screen and (max-width: 767px){
     .mobileFooter{ 
         display: block;
@@ -213,6 +277,12 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .wp-dark-mode-side-toggle-wrap.floating, 
     .wp-dark-mode-switcher.floating {
         bottom: 116px;
+    }
+    .myStats .itemWrap .item .title h4{
+        font-size: 77%;
+    }
+    .notification-wrap.header-cart-link-wrap.cart-wrap.menu-item-has-children.test {
+        display: none;
     }
 }
 @media only screen and (max-width: 390px){
@@ -257,4 +327,8 @@ span.customcount.count.wp-dark-mode-ignore {
     top: -15px;
     left: -20px;
     padding: 0px !important;
+}
+
+body.activity.buddypress header.entry-header{
+    display: none;
 }
