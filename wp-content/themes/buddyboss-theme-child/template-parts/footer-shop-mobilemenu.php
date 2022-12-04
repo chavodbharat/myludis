@@ -65,7 +65,7 @@
             </div>
           </div>
           <div class="item">
-              <a href="#!" >
+              <a href="<?php echo home_url('my-account/payment-methods/') ?>" >
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/shop/wallet.svg" alt="Wallet" />
                   <h5><?php _e('Wallet','myludis'); ?></h5>
               </a>
@@ -77,9 +77,10 @@
               </a>
               <div class="moreDrop">
                 <ul>
-                    <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
-                    <li><a href="#!">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
-                    <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li>
+                    <li><a href="<?php echo home_url('my-account'); ?>"><?php _e('My Account','myludis'); ?> <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
+                    <li><a href="<?php echo home_url('my-account/edit-account/'); ?>"><?php _e('Account details','myludis'); ?> <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
+                    <li><a href="<?php echo home_url('my-account/orders'); ?>"><?php _e('My Order','myludis'); ?>  <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
+                    <li><a href="<?php echo home_url('my-account/how-it-works'); ?>"><?php _e('Address','myludis'); ?>  <i class="bb-icon-l bb-icon-award"></i></a></li>
                 </ul>
               </div>
           </div>

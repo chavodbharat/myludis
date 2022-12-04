@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'myludis_dev' );
+define( 'DB_NAME','wp_myludis');
 
 /** Database username */
-define( 'DB_USER', 'myludis_dev_user' );
+define( 'DB_USER','root');
 
 /** Database password */
-define( 'DB_PASSWORD', 'r1tac*Y6Kth^K6IJv2ig' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
