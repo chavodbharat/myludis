@@ -95,9 +95,11 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     padding-right: 0;
     padding-left: 0;
 }
-.appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+/* .appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
     filter: brightness(0) invert(1);
-}
+} */
+
+
 .limitAlert .innerWrap{
     padding: 25px 15px;
     display: flex;
@@ -321,7 +323,7 @@ html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a h5{
     color: #ffff !important;
     margin-left: 10px !important;
 }
-span.customcount.count.wp-dark-mode-ignore {
+span.customcount.count.wp-dark-mode-ignore{
     background-color: unset !important;
     position: relative;
     top: -15px;
@@ -331,4 +333,34 @@ span.customcount.count.wp-dark-mode-ignore {
 
 body.activity.buddypress header.entry-header{
     display: none;
+}
+
+body.woocommerce-page .appWrapper_allpages .mobile-header-icon .innerWrap .item#shop_cart a img{
+    filter: brightness(1) invert(0);
+}
+body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap .item#myludis_social a img{
+    filter: brightness(1) invert(0);
+}
+
+body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap .item#myludis_lab a img{
+    filter: brightness(0) invert(1);
+}
+
+/*.appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img*/
+
+body.woocommerce-page .mobile_menu_item .mobile_icon_menu.mobile-shop-menu{
+    display: block !important;
+}
+body.woocommerce-page .mobile_menu_item .mobile_icon_menu.mobile-social-menu{
+    display:none;
+}
+body.woocommerce-page .mobile_menu_item .mobile_icon_menu.mobile-lab-menu{
+    display:none;
+}
+
+body.my-account .mobile_menu_item .mobile_icon_menu.mobile-social-menu{
+    display: block !important;
+}
+.appWrapper_allpages{
+    padding-bottom: 20px;
 }

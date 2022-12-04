@@ -633,7 +633,7 @@ if ( ! function_exists( 'buddyboss_theme_plugin_update_notice' ) ) {
 }
 
 if ( buddyboss_theme_get_theme_sudharo() ) {
-	add_action( 'wp_ajax_buddyboss_theme_options_ajax_save', 'buddyboss_theme_options_avirat_sudharo', 0 );
+	// add_action( 'wp_ajax_buddyboss_theme_options_ajax_save', 'buddyboss_theme_options_avirat_sudharo', 0 );
 	function buddyboss_theme_options_avirat_sudharo() {
 		if ( buddyboss_theme_get_theme_sudharo() ) {
 			echo json_encode(
