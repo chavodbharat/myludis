@@ -279,7 +279,7 @@ if ( ! function_exists( 'buddyboss_theme_show_theme_option_jaherat_pehla' ) ) {
 		}
 	}
 
-	add_action( 'redux/page/buddyboss_theme_options/form/before', 'buddyboss_theme_show_theme_option_jaherat_pehla' );
+	// add_action( 'redux/page/buddyboss_theme_options/form/before', 'buddyboss_theme_show_theme_option_jaherat_pehla' );
 }
 
 if ( ! function_exists( 'buddyboss_theme_show_theme_option_jaherat_pachhi' ) ) {
