@@ -34,7 +34,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     bottom: 0px;
     align-items: center;
     border-top: 2px solid #34383b;
-    z-index: 9;
+    z-index: 9999;
 }
 .home-page.directory .header.entry-header{
     display: none;
@@ -95,8 +95,14 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     padding-right: 0;
     padding-left: 0;
 }
-/* .appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+.appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
     filter: brightness(0) invert(1);
+}
+.appWrapper_allpages .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+    filter: brightness(0) invert(1);
+}
+/* body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap #shop_cart a img{
+    filter: brightness(1) invert(0);
 } */
 
 
@@ -205,6 +211,9 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 html:not(.wp-dark-mode-active) .appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
     filter: brightness(0%);
 }
+html:not(.wp-dark-mode-active) .appWrapper_allpages .mobile-header-icon .innerWrap .item a:not(.tab-show) img{
+    filter: brightness(0%);
+}
 html:not(.wp-dark-mode-active) .mobileFooter .innerWrap{
     background: #fff;
     border: 1px solid #F4F4F4;
@@ -262,6 +271,10 @@ html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a h5{
 .mobileFooter .innerWrap .item a.logoTh > i{
     margin-left: 0 !important;
 }
+
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a.logoTh > i{
+    color:#fff;
+} 
 
 
 @media only screen and (max-width: 767px){
@@ -335,7 +348,7 @@ body.activity.buddypress header.entry-header{
     display: none;
 }
 
-body.woocommerce-page .appWrapper_allpages .mobile-header-icon .innerWrap .item#shop_cart a img{
+/* body.woocommerce-page .appWrapper_allpages .mobile-header-icon .innerWrap .item#shop_cart a img{
     filter: brightness(1) invert(0);
 }
 body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap .item#myludis_social a img{
@@ -344,7 +357,7 @@ body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap .item#myludi
 
 body.buddypress .appWrapper_allpages .mobile-header-icon .innerWrap .item#myludis_lab a img{
     filter: brightness(0) invert(1);
-}
+} */
 
 /*.appWrapper .mobile-header-icon .innerWrap .item a:not(.tab-show) img*/
 
@@ -364,3 +377,196 @@ body.my-account .mobile_menu_item .mobile_icon_menu.mobile-social-menu{
 .appWrapper_allpages{
     padding-bottom: 20px;
 }
+div#myludis-drak {
+    display: none;
+}
+/* ks 26Dec start  */
+@media only screen and (max-width:991px){
+    .site-header .header-cart-link-wrap,    
+    .site-header .user-wrap-container .user-name {
+        display: none;
+    }
+    .site-title img.bb-mobile-logo{
+        max-width: 34px;
+    }
+    html.wp-dark-mode-active .bb-mobile-header .bb-left-panel-mobile .bb-icon-bars::before{
+        opacity: 0;
+    }
+    html.wp-dark-mode-active .bb-mobile-header .bb-left-panel-mobile .bb-icon-bars{
+        background-image: url('../images/hamburger-icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 19px;
+    }
+
+    .bb-mobile-header .bb-left-panel-mobile .bb-icon-bars::before{
+        opacity: 0;
+    }
+    .bb-mobile-header .bb-left-panel-mobile .bb-icon-bars{
+        background-image: url('../images/hamburger-icon-drak.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 19px;
+    }
+    .bb-template-v2 .header-aside .user-wrap.user-wrap-container{
+        margin-left: 0px;
+    }
+    html.wp-dark-mode-active .bb-mobile-header .header-aside span{
+        background: #3C3C3C;
+    }
+    header#masthead::after,
+    .mobile-header-icon .innerWrap::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 36px);
+        border-bottom: 1px solid #B2B2B2;
+        margin: 0 auto;
+        right: auto;
+        left: 18px;
+        bottom: 0;
+    }
+    .home-page #primary.content-area{
+        padding-top: 0px;
+    }
+    .home-page #content,
+    .home-page #content > .container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mobile-header-icon .innerWrap{
+        border-color: transparent;
+        position: relative;
+    }
+    #buddypress .activity-lists.bp-list .activity-item, 
+    #buddypress .activity-list.bp-list .activity-item, 
+    #bbpress-forums .activity-list.bp-list .activity-item{
+        border-color: transparent;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    html.wp-dark-mode-active #buddypress .activity-lists.bp-list .activity-item, html.wp-dark-mode-active #buddypress .activity-list.bp-list .activity-item, html.wp-dark-mode-active #bbpress-forums .activity-list.bp-list .activity-item{
+        background: #262726;
+    }
+    .activity-list .bp-activity-head,
+    .activity-list .activity-item .activity-content.media-activity-wrap .activity-inner > p,
+    .activity-list .activity-item .bp-generic-meta.action,
+    .activity-list .activity-item .activity-inner p,
+    .activity-list .activity-item .activity-content .activity-state,
+    .buddypress-wrap .activity-comments{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .bb-media-length-1 .bb-activity-media-elem .entry-img{
+        border-radius: 0;
+    }
+    html.wp-dark-mode-active .activity-list .activity-item .activity-header a,   
+    html.wp-dark-mode-active .buddypress-wrap .activity-comments .acomment-meta .author-name{
+        color: #FFFFFF;
+    }
+    html.wp-dark-mode-active .activity-list .activity-item .activity-header p,
+    html.wp-dark-mode-active body #buddypress .bp-list.bp-list .bp-generic-meta .generic-button > a,
+    html.wp-dark-mode-active .bb-document-privacy-wrap .privacy, .bb-media-privacy-wrap .privacy::after,
+    html.wp-dark-mode-active .bb-document-privacy-wrap .privacy, .bb-media-privacy-wrap .privacy::after{
+        color: #f1f1f1; 
+    }
+    body #buddypress .bp-list.bp-list .bp-generic-meta .generic-button > a::before{
+        color: #1DA1F2;
+    }
+    #buddypress .activity-list.bp-list .activity-item{
+        background: transparent !important;
+        border: 0;
+        border-radius: 0;
+    }
+    .bb-template-v2 #buddypress .activity-list.bp-list .activity-item .activity-comments > ul{
+        border-color: transparent;
+    }
+    .buddypress-wrap .activity-comments > ul{
+        background: transparent;
+    }
+    .activity-list .activity-item div.item-avatar a{
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+    .appWrapper .tabContent.content-show .actvity-head-bar{
+        display: none;
+    }
+    #bp-nouveau-activity-form:not(.modal-popup){
+        display: none !important;
+    }
+    .appWrapper .tabContent.shop-section.content-show{
+        padding: 0px 1%;
+    }
+    li.hideshow a.more-button{
+        display: none !important;
+    }
+    .wp-dark-mode-switcher.wp-dark-mode-ignore.style-1.floating.left_bottom {
+        display: none;
+    }
+    /* .wp-dark-mode-switcher.wp-dark-mode-ignore.style-1 {
+        display: none;
+    } */
+    div#myludis-drak {
+        display: block !important;
+        position: initial;
+    }
+    .mobileFooter .innerWrap .item a.logoTh img.wp-dark-mode-ignore{
+        /* padding-bottom: 18px; */
+    }
+    .mobileFooter .innerWrap .item a.logoTh .plus-icon.wp-dark-mode-ignore{
+        line-height: 0.8;
+        /* position: absolute; */
+        bottom: 0;
+        color: #fff;
+    }
+    #whats-new-form .whats-new-form-footer + #activity-form-submit-wrapper,
+    #whats-new-form .whats-new-form-footer ~ .whats-new-form-footer,
+    #whats-new-form .whats-new-form-footer #whats-new-toolbar + #whats-new-toolbar{
+        display: none;
+    }
+    .mobileFooter .innerWrap .item a.logoTh img {
+        flex: 0 0 25px;
+        max-width: 25px;
+        width: 25px;
+    }
+    .mobileFooter .innerWrap .item a.logoTh .plus-icon.wp-dark-mode-ignore{
+        font-size: 18px;
+        bottom: 9px;
+    }
+    .flex.actvity-head-bar {
+        display: none;
+    }
+    .woocommerce ul.products li.product a img{
+        padding:3px !important;
+    }
+    
+}
+/* ks 26Dec end  */
+
+/* 
+Activity Box hide 
+*/
+/* body.buddypress form#whats-new-form{
+    display: none !important;
+} */
+
+/* .whats-new-scroll-view {
+    display: none;
+} */
+
+html.wp-dark-mode-active .mobileFooter .social-menu .item a:not(.active) img,
+html.wp-dark-mode-active .mobileFooter #shop_menus.item a:not(.active) img{
+    filter: brightness(0) invert(1);
+}
+
+
+/*
+Light theme
+*/
+html:not(.wp-dark-mode-active) .mobileFooter .social-menu .item a:not(.active) img,
+html:not(.wp-dark-mode-active) .mobileFooter #shop_menus .item a:not(.active) img{
+    filter: brightness(0);
+}
+a.current_page_item{
+    color:#1DA1F2 !important;
+}
+

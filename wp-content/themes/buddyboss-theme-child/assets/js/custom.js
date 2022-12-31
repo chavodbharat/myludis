@@ -19,4 +19,29 @@ jQuery(document).ready(function($){
     jQuery('.mobileFooter > .innerWrap > .item.moreWrap .moreBtn').on('click', function(){
         jQuery(this).next('.moreDrop').toggleClass('show');
     });
+    jQuery('.mobileFooter .innerWrap .item a.logoTh').on('click', function(){
+        console.log('logo clicked')
+        jQuery('#bp-nouveau-activity-form').toggleClass('open-cs').addClass('modal-popup');
+        jQuery('#bp-nouveau-activity-form').addClass('modal-popup');
+        jQuery('#bp-nouveau-activity-form .activity-form').addClass('focus-in');
+
+        setTimeout(function(){
+            jQuery('#whats-new-form #whats-new-toolbar').remove('#whats-new-toolbar');
+            jQuery('#whats-new-form').append('<div class="whats-new-form-footer"><div id="whats-new-toolbar"><div class="post-elements-buttons-item post-media media-support"><a href="#" id="activity-media-button" class="toolbar-button bp-tooltip" data-bp-tooltip-pos="up-left" data-bp-tooltip="Attach photo"><i class="bb-icon-l bb-icon-camera"></i></a></div></div><div id="activity-form-submit-wrapper"><div id="whats-new-submit" class="in-profile"><input type="submit" id="aw-whats-new-submit" class="button" name="aw-whats-new-submit" value="Post"><input type="reset" id="aw-whats-new-reset" class="text-button small" value="Cancel"><input type="button" id="discard-draft-activity" class="button outline" name="discard-draft-activity" value="Discard Draft"></div></div></div>');
+            jQuery('#bp-nouveau-activity-form ').trigger('click');
+        },100)
+    });
+   // bp-nouveau-activity-form
+   /*jQuery('.add_activity_post').click(function(e){
+    // alert('test');
+       //  jQuery('#whats-new-form').trigger('click');
+        jQuery('#bp-nouveau-activity-form').trigger('click');
+        jQuery('#whats-new').trigger('click');
+        jQuery('#whats-new-form').addClass('focus-in');
+        jQuery('#whats-new').addClass('medium-editor-element');
+        jQuery('#whats-new').css({"resize": "vertical", "height": "auto"});
+        //resize: vertical; height: auto;
+
+   });*/
+   
 }); 
