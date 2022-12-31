@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
+  <g id="Icon" transform="translate(0 0)">
+    <path id="Icon_Shape" data-name="Icon Shape" d="M10.857,0C10.108,0,9.5.9,9.5,2s.608,2,1.357,2h6.786C18.392,4,19,3.1,19,2s-.607-2-1.357-2Zm-9.5,8C.607,8,0,8.9,0,10s.607,2,1.357,2H17.643C18.392,12,19,11.1,19,10s-.607-2-1.357-2Zm0,8C.607,16,0,16.895,0,18s.607,2,1.357,2H8.143c.749,0,1.357-.9,1.357-2s-.607-2-1.357-2Z" transform="translate(19 20) rotate(180)" fill="#24272c"/>
+  </g>
+</svg>

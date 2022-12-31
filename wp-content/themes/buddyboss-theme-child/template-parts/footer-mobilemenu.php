@@ -16,9 +16,6 @@
                  </div>
       <?php //} ?>
        
-
-        
-
         <div class="mobile_icon_menu mobile-lab-menu" id="show-labmenu">
                 <?php get_template_part( 'template-parts/footer-labs-mobilemenu' ); ?> 
         </div>

@@ -3,11 +3,46 @@
  * Footer Social Mobilemenu
  */
 $userID = get_current_user_id();
+
+$bp  = buddypress();
+$current_component = !empty($bp->current_component)
+    ? $bp->current_component
+    : false;
+ switch ($current_component) {
+    case 'activity':
+        $a_activecl="active";
+        break;
+    case 'messages':
+        $m_activecl="active";
+        break;   
+    case 'groups':
+        $g_activecl="active";
+    break; 
+    case 'forums':
+        $for_activecl="active";
+    break; 
+    case 'blogs':
+        $activecl="active";
+    break; 
+    case 'friends':
+        $f_activecl="active";
+    break;  
+    case 'settings':
+        $activecl="active";
+    break; 
+    case 'xprofile':
+        $activecl="active";
+    break;    
+    
+    default:
+        # code...
+        break;
+ }   
 ?>
  <div class="mobileFooter">
-      <div class="innerWrap">
+      <div class="innerWrap social-menu">
           <div class="item">
-              <a href="<?php echo bp_core_get_user_domain($userID); ?>activity" >
+              <a href="<?php echo bp_core_get_user_domain($userID); ?>activity" class="<?php echo $a_activecl; ?>" >
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-activity.svg" alt="Activity" />
               <!-- <img src="/wp-content/uploads/2022/10/foot-icon-activity.svg" alt="" /> -->
                   
@@ -15,18 +50,20 @@ $userID = get_current_user_id();
               </a>
           </div>
           <div class="item">
-          <a href="<?php echo bp_core_get_user_domain($userID); ?>messages/compose/" >
+          <a href="<?php echo bp_core_get_user_domain($userID); ?>messages/compose/" class="<?php echo $m_activecl; ?>" >
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-message.svg" alt="Message" />
                   <h5><?php _e('Message','myludis'); ?></h5>
               </a>
           </div>
-          <div class="item">
+          <div class="item add_activity_post" id="whats-new-form_01">
               <a href="#!" class="logoTh" >
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-footerLogo.svg" alt="Activity" />
+                 <span class="plus-icon"><i class="bb-icon-plus bb-icon-l"></i></span>
               </a>
+              
           </div>
           <div class="item">
-              <a href="<?php echo bp_core_get_user_domain($userID); ?>friends" >
+              <a href="<?php echo bp_core_get_user_domain($userID); ?>friends" class="<?php echo $f_activecl; ?>" >
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-friends.svg" alt="Friends" />
                  
                   <h5><?php _e('Friends','myludis'); ?></h5>
@@ -39,9 +76,9 @@ $userID = get_current_user_id();
               </a>
               <div class="moreDrop">
                 <ul>
-                    <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
-                    <li><a href="#!">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
-                    <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li>
+                    <!-- <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li> -->
+                    <li><a href="<?php echo home_url(); ?>/forums" class="<?php echo $for_activecl; ?>">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
+                    <!-- <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li> -->
                 </ul>
               </div>
           </div>

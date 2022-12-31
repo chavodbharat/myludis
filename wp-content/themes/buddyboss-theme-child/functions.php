@@ -175,4 +175,27 @@ function mobile_theme_body_class( $classes ){
     }
     return $classes;
 }
+add_shortcode('switch_button','getLightDarktheme');
+function getLightDarktheme(){
+        $html='<div class="wp-dark-mode-switcher wp-dark-mode-ignore style-1 active" id="myludis-drak">
+            <label for="wp-dark-mode-switch" class="wp-dark-mode-ignore wp-dark-mode-none">
+                <div class="modes wp-dark-mode-ignore">
+                    <img class="light" src="/wp-content/plugins/wp-dark-mode//assets/images/btn-1/light.png" alt="Light">
+                    <img class="dark" src="/wp-content/plugins/wp-dark-mode//assets/images/btn-1/dark.png" alt="Dark">
+                </div>
+            </label>
+    </div>';
+    return  $html;
+}
+/**
+ * check Page 
+ */
+function checkCurrentPage($page_name){
+        $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+        if (strpos($url,$page_name) !== false){
+                return true;
+        }else{
+                return false;
+        }
+}
 ?>

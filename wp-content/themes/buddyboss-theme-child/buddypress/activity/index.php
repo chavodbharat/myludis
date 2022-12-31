@@ -5,14 +5,15 @@
  * @since BuddyPress 2.3.0
  * @version 3.0.0
  */
+	
 ?>
-<?php   if ( wp_is_mobile() ){ ?>
+<?php if (wp_is_mobile()){ ?>
 
 <div class="appWrapper">
 		<div class="mobile-header-icon"> 
 				<div class="innerWrap">
 					<div class="item" id="shop_cart"><a href="#swt-cart" menu-active="#show-cartmenu" ><img src="/wp-content/uploads/2022/10/head-nav-icon-01.svg" alt="" /> </a></div>
-					<div class="item" id="myludis_social"><a href="#swt-social" class="tab-show" menu-active="#show-socialmenu" data-active="swt-cart"><img src="/wp-content/uploads/2022/10/head-nav-icon-02.svg" alt="" /> </a></div>
+					<div class="item" id="myludis_social"><a href="#swt-social" class="tab-show <?php // echo $class_active; ?>" menu-active="#show-socialmenu" data-active="swt-cart"><img src="/wp-content/uploads/2022/10/head-nav-icon-02.svg" alt="" /> </a></div>
 					<div class="item" id="myludis_lab"><a href="#swt-lab"  menu-active="#show-labmenu"><img src="/wp-content/uploads/2022/10/head-nav-icon-03.svg" alt="" /> </a></div>
 				</div>
 		</div>
