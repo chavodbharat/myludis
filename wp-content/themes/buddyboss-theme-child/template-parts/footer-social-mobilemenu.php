@@ -95,7 +95,7 @@ $current_component = !empty($bp->current_component)
               <div class="moreDrop">
                 <ul>
                     <!-- <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li> -->
-                    <li><a href="<?php echo home_url(); ?>/forums" class="<?php echo $for_activecl; ?>">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
+                    <li><a href="<?php echo home_url(); ?>/forums" class="<?php echo $for_activecl; ?>"><?php _e('Support','myludis'); ?> <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
                     <!-- <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li> -->
                 </ul>
               </div>

@@ -557,9 +557,11 @@ Activity Box hide
 } */
 
 html.wp-dark-mode-active .mobileFooter .social-menu .item a:not(.active) img,
-html.wp-dark-mode-active .mobileFooter #shop_menus .item a:not(.active) img{
+html.wp-dark-mode-active .mobileFooter #shop_menus .item a:not(.active) img,
+html.wp-dark-mode-active .mobileFooter #labmyludis-menu .item a:not(.active) img{
     filter: brightness(0) invert(1);
 }
+
 
 
 /*

@@ -55,9 +55,9 @@
 				    $active = 'data-active="swt-cart"';
 			 }else if (is_woocommerce()){
 				$shop_tabShow='tab-show';
-			 }else {
-				$lab_tabshow="";
-			 }
+			 }	else if(checkCurrentPage('lab')){ 
+					$lab_tabshow="tab-show";
+			}
 			
 			if(!is_front_page()){?>
 					<div class="appWrapper_allpages">
