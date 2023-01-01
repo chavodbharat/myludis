@@ -540,6 +540,9 @@ div#myludis-drak {
     }
     
 }
+div#bp-nouveau-activity-form {
+    display: none;
+}
 /* ks 26Dec end  */
 
 /* 
@@ -554,7 +557,7 @@ Activity Box hide
 } */
 
 html.wp-dark-mode-active .mobileFooter .social-menu .item a:not(.active) img,
-html.wp-dark-mode-active .mobileFooter #shop_menus.item a:not(.active) img{
+html.wp-dark-mode-active .mobileFooter #shop_menus .item a:not(.active) img{
     filter: brightness(0) invert(1);
 }
 
@@ -566,6 +569,7 @@ html:not(.wp-dark-mode-active) .mobileFooter .social-menu .item a:not(.active) i
 html:not(.wp-dark-mode-active) .mobileFooter #shop_menus .item a:not(.active) img{
     filter: brightness(0);
 }
+
 a.current_page_item{
     color:#1DA1F2 !important;
 }
