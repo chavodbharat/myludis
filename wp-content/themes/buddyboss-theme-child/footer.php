@@ -21,14 +21,16 @@ $bp  = buddypress();
 
 if ($current_component !='activity' && !empty($current_component)) {
 	?>
-		<?php bp_nouveau_before_activity_directory_content(); ?>
+	<div class="common-activity-box">
+	
+				<?php bp_nouveau_before_activity_directory_content(); ?>
 
-		<?php if ( is_user_logged_in() ) : ?>
+				<?php if ( is_user_logged_in() ) : ?>
 
-			<?php bp_get_template_part( 'activity/post-form' ); ?>
+					<?php bp_get_template_part( 'activity/post-form' ); ?>
 
-		<?php endif; ?>
-
+				<?php endif; ?>
+		</div>
 		<?php bp_nouveau_template_notices(); ?>
 	<?php
 }				

@@ -12,9 +12,9 @@
 <div class="appWrapper">
 		<div class="mobile-header-icon"> 
 				<div class="innerWrap">
-					<div class="item" id="shop_cart"><a href="#swt-cart" menu-active="#show-cartmenu" ><img src="/wp-content/uploads/2022/10/head-nav-icon-01.svg" alt="" /> </a></div>
-					<div class="item" id="myludis_social"><a href="#swt-social" class="tab-show <?php // echo $class_active; ?>" menu-active="#show-socialmenu" data-active="swt-cart"><img src="/wp-content/uploads/2022/10/head-nav-icon-02.svg" alt="" /> </a></div>
-					<div class="item" id="myludis_lab"><a href="#swt-lab"  menu-active="#show-labmenu"><img src="/wp-content/uploads/2022/10/head-nav-icon-03.svg" alt="" /> </a></div>
+					<div class="item" id="shop_cart"><a href="#swt-cart" menu-active="#show-cartmenu" ><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/header/head-nav-icon-01.svg" alt="" /> </a></div>
+					<div class="item" id="myludis_social"><a href="#swt-social" class="tab-show <?php // echo $class_active; ?>" menu-active="#show-socialmenu" data-active="swt-cart"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/header/head-nav-icon-02.svg" alt="" /> </a></div>
+					<div class="item" id="myludis_lab"><a href="#swt-lab"  menu-active="#show-labmenu"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/header/head-nav-icon-03.svg" alt="lab-cion" /> </a></div>
 				</div>
 		</div>
 		<div class="tabContentWrap"> 

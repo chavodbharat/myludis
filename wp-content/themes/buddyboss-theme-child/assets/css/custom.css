@@ -576,3 +576,6 @@ a.current_page_item{
     color:#1DA1F2 !important;
 }
 
+.common-activity-box {
+    display: none !important;
+}
