@@ -540,9 +540,14 @@ div#myludis-drak {
     }
     
 }
-div#bp-nouveau-activity-form {
-    display: none;
+@media only screen and (min-width:992px){
+    div#bp-nouveau-activity-form {
+        display: none;
+    }
 }
+/* div#bp-nouveau-activity-form {
+    display: none;
+} */
 /* ks 26Dec end  */
 
 /* 
@@ -576,6 +581,17 @@ a.current_page_item{
     color:#1DA1F2 !important;
 }
 
-.common-activity-box {
+/* .common-activity-box{
     display: none !important;
+} */
+.moreDropMessage section.notification-dropdown.myludismessage{
+    right: 23px !important;
+    top: -186px !important;
+    left: 42px !important;
+}
+ul.notification-list.wp-dark-mode-ignore {
+    padding: 6px;
+}
+.moreDropMessage.wp-dark-mode-ignore {
+    display: none;
 }

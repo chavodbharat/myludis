@@ -3,6 +3,7 @@
  * Footer Social Mobilemenu
  */
 $userID = get_current_user_id();
+$show_messages      = buddyboss_theme_get_option( 'desktop_component_opt_multi_checkbox', 'desktop_messages' ) && is_user_logged_in();
 
 $bp  = buddypress();
 $current_component = !empty($bp->current_component)
@@ -67,11 +68,18 @@ $current_component = !empty($bp->current_component)
                 </ul>
               </div> -->
           <!-- </div> -->
-          <div class="item">
-            <a href="<?php echo bp_core_get_user_domain($userID); ?>messages/compose/" class="<?php echo $m_activecl; ?>" >
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-message.svg" alt="Message" />
+          <div class="item moreWrap">
+          <a href="#!" class="<?php echo $m_activecl; ?> moreBtn">
+           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-message.svg" alt="Message" />
                     <h5><?php _e('Message','myludis'); ?></h5>
                 </a>
+                <div class="moreDropMessage">
+                    <?php
+                        if ( $show_messages && function_exists( 'bp_is_active' ) && bp_is_active( 'messages' ) ) :
+                            get_template_part('template-parts/myludismessages-dropdown');
+                        endif;
+                ?>   
+              </div>
           </div>
           <div class="item add_activity_post" id="whats-new-form_01">
               <a href="#!" class="logoTh" >

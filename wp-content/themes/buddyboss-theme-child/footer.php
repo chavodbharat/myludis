@@ -12,6 +12,7 @@
 ?>
 
 <?php do_action( THEME_HOOK_PREFIX . 'end_content' ); ?>
+<div class="footer-form">
 <?php
 
 $bp  = buddypress();
@@ -21,7 +22,7 @@ $bp  = buddypress();
 
 if ($current_component !='activity' && !empty($current_component)) {
 	?>
-	<div class="common-activity-box">
+	
 	
 				<?php bp_nouveau_before_activity_directory_content(); ?>
 
@@ -30,13 +31,13 @@ if ($current_component !='activity' && !empty($current_component)) {
 					<?php bp_get_template_part( 'activity/post-form' ); ?>
 
 				<?php endif; ?>
-		</div>
+		
 		<?php bp_nouveau_template_notices(); ?>
 	<?php
 }				
 ?>
 
-
+</div>
 </div><!-- .bb-grid -->
 </div><!-- .container -->
 </div><!-- #content -->
