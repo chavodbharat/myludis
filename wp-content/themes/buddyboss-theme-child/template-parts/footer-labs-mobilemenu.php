@@ -4,11 +4,12 @@
  */
 
 ?>
+
  <div class="mobileFooter">
-      <div class="innerWrap">
+      <div class="innerWrap" id="labmyludis-menu">
           <div class="item">
               <a href="#!" >
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/shop/noun-market-place-1581277.svg" alt="Nutrition" />
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/lab/noun-diet.svg" alt="Nutrition" />
                    <h5><?php _e('Nutrition','myludis'); ?></h5>
               </a>
           </div>
@@ -37,9 +38,9 @@
               </a>
               <div class="moreDrop">
                 <ul>
-                    <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li>
+                    <!-- <li><a href="#!">How it works <i class="bb-icon-l bb-icon-brand-aperture"></i></a></li> -->
                     <li><a href="#!">Support <i class="bb-icon-l bb-icon-brand-apple"></i></a></li>
-                    <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li>
+                    <!-- <li><a href="#!">Notification <i class="bb-icon-l bb-icon-award"></i></a></li> -->
                 </ul>
               </div>
           </div>
