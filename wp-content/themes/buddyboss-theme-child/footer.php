@@ -12,6 +12,10 @@
 ?>
 
 <?php do_action( THEME_HOOK_PREFIX . 'end_content' ); ?>
+
+</div><!-- .bb-grid -->
+</div><!-- .container -->
+</div><!-- #content -->
 <div class="footer-form">
 <?php
 
@@ -38,10 +42,6 @@ if ($current_component !='activity' && !empty($current_component)) {
 ?>
 
 </div>
-</div><!-- .bb-grid -->
-</div><!-- .container -->
-</div><!-- #content -->
-
 <?php do_action( THEME_HOOK_PREFIX . 'after_content' ); ?>
 
 <?php do_action( THEME_HOOK_PREFIX . 'before_footer' ); ?>

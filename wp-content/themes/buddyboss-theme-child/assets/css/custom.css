@@ -584,11 +584,16 @@ a.current_page_item{
 /* .common-activity-box{
     display: none !important;
 } */
-.moreDropMessage section.notification-dropdown.myludismessage{
-    right: 23px !important;
-    top: -186px !important;
-    left: 42px !important;
+.messageIcon .moreDropMessage #header-messages-dropdown-elem section#myludismessage{
+    right: 151px !important;
+    top: calc(100% - 352px);
+    left: 0px !important;
 }
+.messageIcon .moreDropMessage #header-messages-dropdown-elem section#myludismessage a{
+         padding:10px !important;
+        text-align: center;
+}
+
 ul.notification-list.wp-dark-mode-ignore {
     padding: 6px;
 }

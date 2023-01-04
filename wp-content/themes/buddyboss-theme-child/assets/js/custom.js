@@ -31,6 +31,18 @@ jQuery(document).ready(function($){
             jQuery('#bp-nouveau-activity-form ').trigger('click');
         },100)
     });
+    jQuery('.messageIcon a').click(function(e){
+      
+        jQuery('.moreDropMessage').css({"display": "block"});
+        if (!jQuery('.moreDropMessage').hasClass( "openmodel" ) ) {
+            jQuery('.moreDropMessage').addClass('openmodel');
+            jQuery('.messageIcon #header-messages-dropdown-elem').addClass('selected');
+        }else{
+              jQuery('.moreDropMessage').removeClass('openmodel');
+              jQuery('.messageIcon #header-messages-dropdown-elem').removeClass('selected');
+        }
+        
+    });
    // bp-nouveau-activity-form
    /*jQuery('.add_activity_post').click(function(e){
     // alert('test');

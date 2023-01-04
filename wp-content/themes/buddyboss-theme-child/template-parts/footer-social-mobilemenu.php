@@ -68,7 +68,7 @@ $current_component = !empty($bp->current_component)
                 </ul>
               </div> -->
           <!-- </div> -->
-          <div class="item moreWrap">
+        <div class="item moreWrap messageIcon">
           <a href="#!" class="<?php echo $m_activecl; ?> moreBtn">
            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-message.svg" alt="Message" />
                     <h5><?php _e('Message','myludis'); ?></h5>
