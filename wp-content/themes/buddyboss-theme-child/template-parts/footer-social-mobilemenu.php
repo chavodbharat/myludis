@@ -82,10 +82,10 @@ $current_component = !empty($bp->current_component)
               </div>
           </div>
           <div class="item add_activity_post" id="whats-new-form_01">
-              <a href="#!" class="logoTh" >
+              <div class="logoTh" >
                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/svg/social/foot-icon-footerLogo.svg" alt="Activity" />
-                 <span class="plus-icon"><i class="bb-icon-plus bb-icon-l"></i></span>
-              </a>
+                        <!-- <span class="plus-icon"><i class="bb-icon-plus bb-icon-l"></i></span> -->
+                </div>
               
           </div>
           <div class="item">

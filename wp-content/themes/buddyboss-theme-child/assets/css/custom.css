@@ -51,7 +51,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     margin-bottom: 0;
     color: #979EA3;
 }
-.mobileFooter .innerWrap .item a.logoTh{
+.mobileFooter .innerWrap .item .logoTh{
     width: 56px;
     height: 56px;
     padding: 0;
@@ -61,7 +61,7 @@ https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     justify-content: center;
     align-items: center;
 }
-.mobileFooter .innerWrap .item a.logoTh img{
+.mobileFooter .innerWrap .item .logoTh img{
     margin-bottom: 0;
 }
 .mobile-header-icon .innerWrap{
@@ -268,11 +268,11 @@ html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a h5{
     max-width: 35px;
     width: 35px;
 }
-.mobileFooter .innerWrap .item a.logoTh > i{
+.mobileFooter .innerWrap .item .logoTh > i{
     margin-left: 0 !important;
 }
 
-html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item a.logoTh > i{
+html:not(.wp-dark-mode-active) .mobileFooter .innerWrap .item .logoTh > i{
     color:#fff;
 } 
 
@@ -491,7 +491,7 @@ div#myludis-drak {
         display: none;
     }
     #bp-nouveau-activity-form:not(.modal-popup){
-        display: none !important;
+        /* display: none !important; */
     }
     .appWrapper .tabContent.shop-section.content-show{
         padding: 0px 1%;
@@ -509,10 +509,10 @@ div#myludis-drak {
         display: block !important;
         position: initial;
     }
-    .mobileFooter .innerWrap .item a.logoTh img.wp-dark-mode-ignore{
+    .mobileFooter .innerWrap .item .logoTh img.wp-dark-mode-ignore{
         /* padding-bottom: 18px; */
     }
-    .mobileFooter .innerWrap .item a.logoTh .plus-icon.wp-dark-mode-ignore{
+    .mobileFooter .innerWrap .item .logoTh .plus-icon.wp-dark-mode-ignore{
         line-height: 0.8;
         /* position: absolute; */
         bottom: 0;
@@ -523,12 +523,12 @@ div#myludis-drak {
     #whats-new-form .whats-new-form-footer #whats-new-toolbar + #whats-new-toolbar{
         display: none;
     }
-    .mobileFooter .innerWrap .item a.logoTh img {
+    .mobileFooter .innerWrap .item .logoTh img {
         flex: 0 0 25px;
         max-width: 25px;
         width: 25px;
     }
-    .mobileFooter .innerWrap .item a.logoTh .plus-icon.wp-dark-mode-ignore{
+    .mobileFooter .innerWrap .item .logoTh .plus-icon.wp-dark-mode-ignore{
         font-size: 18px;
         bottom: 9px;
     }
@@ -541,9 +541,9 @@ div#myludis-drak {
     
 }
 @media only screen and (min-width:992px){
-    div#bp-nouveau-activity-form {
+    /* div#bp-nouveau-activity-form {
         display: none;
-    }
+    } */
 }
 /* div#bp-nouveau-activity-form {
     display: none;
@@ -599,4 +599,29 @@ ul.notification-list.wp-dark-mode-ignore {
 }
 .moreDropMessage.wp-dark-mode-ignore {
     display: none;
+}
+.products .wcpv-sold-by-loop{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.woocommerce li.product a.button.add_to_cart_button:hover, .woocommerce li.product a.added_to_cart.wc-forward:hover, .woocommerce li.product a.button.product_type_simple:hover, .woocommerce li.product a.button.product_type_grouped:hover, .woocommerce li.product a.button.product_type_external:hover, .woocommerce li.product a.button.product_type_variable:hover {
+    background-color: var(--bb-primary-color);
+    color: #fff;
+    border-radius: 9px !important;
+}
+.woocommerce li.product a.button.add_to_cart_button.added{
+    border-top: 0px solid var(--bb-content-border-color);
+}
+#buddypress .comment-reply-link, #buddypress .generic-button a,
+ #buddypress .standard-form button, #buddypress a.button,
+  #buddypress input[type="button"],
+   #buddypress input[type="reset"], #buddypress input[type="submit"], #buddypress ul.button-nav li a, a.bp-title-button{
+    border-color: initial;
+    background-color: rgb(36, 37, 37);
+    color: rgb(83, 147, 231);
+    border: 0px;
+}
+#activity-stream .activity-inner .bb-activity-media-elem{
+    padding: 1px;
 }

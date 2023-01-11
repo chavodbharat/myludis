@@ -19,8 +19,8 @@ jQuery(document).ready(function($){
     jQuery('.mobileFooter > .innerWrap > .item.moreWrap .moreBtn').on('click', function(){
         jQuery(this).next('.moreDrop').toggleClass('show');
     });
-    jQuery('.mobileFooter .innerWrap .item a.logoTh').on('click', function(){
-        console.log('logo clicked')
+    jQuery('.mobileFooter .innerWrap .item a.logoTh_01').on('click', function(){
+       // console.log('logo clicked')
         jQuery('#bp-nouveau-activity-form').toggleClass('open-cs').addClass('modal-popup');
         jQuery('#bp-nouveau-activity-form').addClass('modal-popup');
         jQuery('#bp-nouveau-activity-form .activity-form').addClass('focus-in');

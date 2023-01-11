@@ -53,7 +53,9 @@
 			 if (isset($current_component) && !empty($current_component)) {
 					$social_tabShow ='tab-show';
 				    $active = 'data-active="swt-cart"';
-			 }else if (is_woocommerce()){
+			 }
+			 else if (is_woocommerce() || is_cart() || is_checkout() || is_product() || is_account_page()){
+				
 				$shop_tabShow='tab-show';
 			 }	else if(checkCurrentPage('lab')){ 
 					$lab_tabshow="tab-show";
