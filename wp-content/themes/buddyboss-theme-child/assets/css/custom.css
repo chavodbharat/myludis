@@ -625,3 +625,6 @@ ul.notification-list.wp-dark-mode-ignore {
 #activity-stream .activity-inner .bb-activity-media-elem{
     padding: 1px;
 }
+.activity-inner .bb-activity-media-wrap{
+    margin:0px !important;
+}
